@@ -1,0 +1,134 @@
+@import 'animation';
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EFEFEF;
+
+	.container {
+		background-color: #FFF;
+		width: 375px;
+		height: 645px;
+		display: flex;
+		border-radius: 25px;
+		overflow: hidden;
+
+		.status-bar {
+			position: absolute;
+			top: 12px;
+			width: 25%;
+
+			.time {
+				display: flex;
+				justify-content: start;
+			}
+
+			.signal {
+				position: absolute;
+				display: flex;
+				justify-content: end;
+				width: 82%;
+				top: 0;
+			}
+
+			.wifi {
+				position: absolute;
+				display: flex;
+				justify-content: end;
+				width: 90%;
+				top: 0;
+			}
+
+			.battery {
+				position: absolute;
+				display: flex;
+				width: 100%;
+				justify-content: end;
+				top: -2px;
+
+				i {
+					font-size: 17px;
+					color: #333;
+				}
+			}
+		}
+
+		.slider {
+			display: flex;
+
+			.logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.welcome-slide {
+				background-color: #FFA451;
+				height: 647px;
+				display: flex;
+				justify-content: center;
+				align-items: start;
+
+				img {
+					margin-top: 90px;
+				}
+
+				.text {
+					margin: 22em 0 0 -23em;
+					width: 378px;
+					background: #FFF;
+					height: 19em;
+
+					h2 {
+						font-family: 'TT Norms Pro', sans-serif;
+						color: #27214D;
+						font-weight: 700;
+						display: flex;
+						padding: 38px 0 18px 16px;
+					}
+
+					p {
+						font-family: 'TT Norms Pro', sans-serif;
+						font-weight: 400;
+						color: #5D577E;
+						padding-left: 10px;
+						width: 336px;
+						font-size: 17px;
+					}
+				}
+
+				.button {
+					display: flex;
+					justify-content: center;
+					margin: 5em 0 0;
+
+					a {
+						width: 327px;
+						height: 56px;
+						font-family: 'TT Norms Pro', sans-serif;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-decoration: none;
+						background-color: #FFA451;
+						color: #FFF;
+						border-radius: 10px;
+					}
+				}
+			}
+
+			.slide {
+				width: 150%;
+				animation: slide 5s ease-in-out;
+				animation-fill-mode: forwards;
+				overflow: hidden;
+
+				img {
+					width: 370px;
+					height: 215px;
+				}
+			}
+		}
+	}
+}

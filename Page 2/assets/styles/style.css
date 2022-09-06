@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+}
+body .container {
+  background-color: #FFF;
+  width: 375px;
+  height: 645px;
+  display: flex;
+  border-radius: 25px;
+}
+body .container .status-bar {
+  position: absolute;
+  top: 12px;
+  width: 25%;
+}
+body .container .status-bar .time {
+  display: flex;
+  justify-content: start;
+}
+body .container .status-bar .signal {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 82%;
+  top: 0;
+}
+body .container .status-bar .wifi {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  top: 0;
+}
+body .container .status-bar .battery {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  top: -2px;
+}
+body .container .status-bar .battery i {
+  font-size: 17px;
+  color: #333;
+}
+body .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #FFA451;
+  border-radius: 25px;
+}
+body .container .content .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .content .image img {
+  margin: 0 0 10em;
+}
+body .container .content .text {
+  position: absolute;
+  bottom: 0;
+  background-color: #FFF;
+  width: 23.5em;
+  height: 15em;
+}
+body .container .content .text h2 {
+  font-family: "TT Norms Pro", sans-serif;
+  padding: 38px 0 20px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #27214D;
+}
+body .container .content .text input {
+  width: 315px;
+  height: 50px;
+  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  background-color: #F7F5F5;
+  border: none;
+  padding-left: 15px;
+}
+body .container .content .text a button {
+  width: 336px;
+  height: 56px;
+  margin: 15px 0 0 17px;
+  font-family: "TT Norms Pro", sans-serif;
+  text-decoration: none;
+  background-color: #FFA451;
+  color: #FFF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

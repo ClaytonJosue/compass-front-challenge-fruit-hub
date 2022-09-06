@@ -1,0 +1,153 @@
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+}
+body .container {
+  background-color: #FFF;
+  width: 375px;
+  height: 645px;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}
+body .container .status-bar {
+  position: absolute;
+  top: 12px;
+  width: 25%;
+}
+body .container .status-bar .time {
+  display: flex;
+  justify-content: start;
+}
+body .container .status-bar .signal {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 82%;
+  top: 0;
+}
+body .container .status-bar .wifi {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  top: 0;
+}
+body .container .status-bar .battery {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  top: -2px;
+}
+body .container .status-bar .battery i {
+  font-size: 17px;
+  color: #333;
+}
+body .container .slider {
+  display: flex;
+}
+body .container .slider .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .slider .welcome-slide {
+  background-color: #FFA451;
+  height: 647px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+body .container .slider .welcome-slide img {
+  margin-top: 90px;
+}
+body .container .slider .welcome-slide .text {
+  margin: 22em 0 0 -23em;
+  width: 378px;
+  background: #FFF;
+  height: 19em;
+}
+body .container .slider .welcome-slide .text h2 {
+  font-family: "TT Norms Pro", sans-serif;
+  color: #27214D;
+  font-weight: 700;
+  display: flex;
+  padding: 38px 0 18px 16px;
+}
+body .container .slider .welcome-slide .text p {
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 400;
+  color: #5D577E;
+  padding-left: 10px;
+  width: 336px;
+  font-size: 17px;
+}
+body .container .slider .welcome-slide .button {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0 0;
+}
+body .container .slider .welcome-slide .button a {
+  width: 327px;
+  height: 56px;
+  font-family: "TT Norms Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #FFA451;
+  color: #FFF;
+  border-radius: 10px;
+}
+body .container .slider .slide {
+  width: 150%;
+  -webkit-animation: slide 5s ease-in-out;
+          animation: slide 5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  overflow: hidden;
+}
+body .container .slider .slide img {
+  width: 370px;
+  height: 215px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+}
+body .container {
+  background-color: #FFF;
+  width: 375px;
+  height: 645px;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
